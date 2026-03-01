@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(250, 249, 249);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p{
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* TaskList */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+li:last-child {
+  border-bottom: none;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: #999;
+  cursor: pointer;
+}
+
+.task-active {
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* FilterBar */
+.filter-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #eee;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}
+
+.filter-button.active {
+  font-weight: bold;
+  background-color: #bbb;
+}
+
+/* Input */
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 15px;
+}
